@@ -1,4 +1,5 @@
 const express=require('express');
+var favicon = require('serve-favicon')
 const app = express();
 
 app.use(express.json())
@@ -12,7 +13,7 @@ const users=[
     { id:7, username : "savithiri" ,password : "savithri1234"},
 
 ]
-
+var _favicon = favicon(path.join(__dirname, 'public', 'degree.ico'))
 
 
 
